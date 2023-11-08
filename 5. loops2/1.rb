@@ -3,8 +3,12 @@
 count = 1
 
 loop do
-  until count == 5
-  count += 1
-  puts count
-  end
+    if count%2 == 0
+      puts "#{count} is even"
+    end
+    if count%2 != 0
+      puts "#{count} is odd"
+    end
+break if count == 5
+count += 1
 end

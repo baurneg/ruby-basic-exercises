@@ -5,9 +5,19 @@
 loop do
 
 puts 'Enter your username: '
-user_name = gets.chomp.to_s
+username_input = gets.chomp.to_s
 
 puts 'Enter your password: '
-password = gets.chomp
+password_input = gets.chomp.to_s
+    
+    username = "Admin"
+    password = "Password"
+   
+    if username_input == username && password_input == password
+      puts "Welcome!"
+        break
+    else
+      puts "Try again"
+    end
 
 end
